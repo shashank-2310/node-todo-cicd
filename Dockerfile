@@ -1,5 +1,5 @@
 # Base Image
-FROM node:its-alpine3.23
+FROM node:lts-alpine3.23
 
 # Working directory
 WORKDIR /node
