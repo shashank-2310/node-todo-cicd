@@ -1,0 +1,7 @@
+services:
+  node-app-cnt:
+    image: kenpachikakashi/node-app:latest
+    ports:
+      - "8000:8000"
+    
+  

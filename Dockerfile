@@ -1,16 +1,18 @@
-# Node Base Image
-FROM node:12.2.0-alpine
+# Base Image
+FROM node:its-alpine3.23
 
-#Working Directry
+# Working directory
 WORKDIR /node
 
-#Copy the Code
+# Copy the code
 COPY . .
 
-#Install the dependecies
+# Install deps
 RUN npm install
 RUN npm run test
+
+# Port to listen to
 EXPOSE 8000
 
-#Run the code
+# Serve the app
 CMD ["node","app.js"]
